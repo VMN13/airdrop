@@ -16,11 +16,27 @@ import SPLoader from './SpinnerLoader';
 
 
 function App() {
-
+  let tg = window.Telegram;
   
+  if(tg != undefined){
+    if (tg.WebApp != undefined && tg.WebApp.initData != undefined){
+     
+    let safe = tg.WebApp.initData;
+    
+    tg.WebApp.backgroundColor = '#3d3d3d';
+    tg.WebApp.headerColor = '#212121';
+    tg.WebApp.expand(); 
 
-  const tele = window.Telegram.WebApp;
-  tele.isVerticalSwipesEnabled = false;
+    }    
+  }
+
+  tg.WebApp.expand()
+  window.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
+  window.scrollTo(0, 100);
+  tg.WebApp.ready()
+
+ 
+
 
 
  const data = JSON.stringify({
