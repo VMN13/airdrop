@@ -35,6 +35,9 @@ function App() {
   window.scrollTo(0, 100);
   tg.WebApp.ready()
 
+
+  
+
  
 
 

@@ -835,6 +835,9 @@ width: 1520px;
     }
  }
  
+ #usercard{
+  text-align: center;
+}
  
  #dark .toggle-label {
    display: block;

@@ -9,9 +9,18 @@ import minipulse from './minipulse.gif';
 
 
 import './App.css';
+export const tg = window.Telegram.WebApp;
+tg.expand();
+
+
 
 
 export default function SPLoader() {
+
+
+
+
+  
   const [theme, setTheme] = useState(() => {
     const mode = JSON.parse(localStorage.getItem('mode'));
     return mode|| "dark"; 
@@ -82,6 +91,11 @@ return (
       <div id='AirDrop'>
   Air Drop
   </div>
+  <div id="usercard"> 
+   </div>
+   <p>Just text</p> 
+  
+   <p class="hint">Some little hint</p>
   
   <h2 id="q">
     BPM
