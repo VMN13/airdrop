@@ -31,7 +31,7 @@ function App() {
   }
 
   tg.WebApp.expand()
-  window.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
+  window.addEventListener("touchmove", (e) => e.preventDefault(), { passive: true });
   window.scrollTo(0, 100);
   tg.WebApp.ready()
 
