@@ -18,29 +18,11 @@ import SPLoader from './SpinnerLoader';
 function App() {
   let tg = window.Telegram;
   
-  if(tg != undefined){
-    if (tg.WebApp != undefined && tg.WebApp.initData != undefined){
-     
-    let safe = tg.WebApp.initData;
-    
-    tg.WebApp.backgroundColor = '#3d3d3d';
-    tg.WebApp.headerColor = '#212121';
-    tg.WebApp.expand(); 
-
-    }    
-  }
-
-  tg.WebApp.expand()
-  window.addEventListener("touchmove", (e) => e.preventDefault(), { passive: true });
-  window.scrollTo(0, 100);
-  tg.WebApp.ready()
-
-
-  
-
  
-
-
+  const app = window.Telegram.WebApp;
+  app.ready()
+  app.isClosingConfirmationEnabled = true;
+ 
 
  const data = JSON.stringify({
   eventType: 'web_app_setup_closing_behavior',
