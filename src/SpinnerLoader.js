@@ -15,10 +15,13 @@ const app = window.Telegram.WebApp;
 app.ready()
 app.disableVerticalSwipes()
 
+
 export default function SPLoader() {
 
 
 
+
+  
   const [theme, setTheme] = useState(() => {
     const mode = JSON.parse(localStorage.getItem('mode'));
     return mode|| "dark"; 
@@ -532,7 +535,5 @@ Ann：https://t.me/CatizenAnn</p>
 
 
 }
-
-
 
 
