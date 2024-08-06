@@ -19,9 +19,6 @@ function App() {
   let tg = window.Telegram;
   
  
-  const app = window.Telegram.WebApp;
-  app.ready()
-  app.isClosingConfirmationEnabled = true;
  
 
  const data = JSON.stringify({

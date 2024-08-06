@@ -11,8 +11,9 @@ import minipulse from './minipulse.gif';
 import './App.css';
 export const tg = window.Telegram.WebApp;
 tg.expand();
-
-
+const app = window.Telegram.WebApp;
+app.ready()
+app.disableVerticalSwipes()
 
 
 export default function SPLoader() {
