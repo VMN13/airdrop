@@ -45,7 +45,7 @@ setTimeout(() => {
        setText(
         'Active users'
        )
-}, 20)
+}, 2000)
   }, [])
 
 return (
