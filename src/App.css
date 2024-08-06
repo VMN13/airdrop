@@ -375,6 +375,10 @@ footer {
   
 }
 
+#spinner {
+  height: 100px;
+}
+
 #dollar {
   @media (max-width: 700px)  {
   overflow-y: hidden;

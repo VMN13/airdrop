@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
+import spinner from "./Spinner.gif";
 import CountUp from "react-countup";
 import logo from './Money.gif';
 import gif from './Bucket.gif';
@@ -45,7 +45,7 @@ setTimeout(() => {
        setText(
         'Active users'
        )
-}, 2000)
+}, 2020)
   }, [])
 
 return (
@@ -55,7 +55,18 @@ return (
     showImg ? (
       <div id='p'>
         <div id='dollar'>
-        
+       
+      <img id='a' src={logo} alt="loading..." />
+      <img id='a' src={logo} alt="loading..." />
+      <img id='a' src={logo} alt="loading..." />
+      <img id='a' src={logo} alt="loading..." />
+      <img id='a' src={logo} alt="loading..." />
+  
+     
+      <img id='a' src={logo} alt="loading..." />
+     
+      <img id='a' src={logo} alt="loading..." />
+      <img id='spinner' src={spinner} alt="loading..." />
       <img id='a' src={logo} alt="loading..." />
       <img id='a' src={logo} alt="loading..." />
       <img id='a' src={logo} alt="loading..." />
@@ -66,15 +77,7 @@ return (
       <img id='a' src={logo} alt="loading..." />
       <img id='a' src={logo} alt="loading..." />
       <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
-      <img id='a' src={logo} alt="loading..." />
+      
       </div>
       </div>
     ) : (
