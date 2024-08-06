@@ -98,12 +98,13 @@ return (
   </div>
   <div className='ba'>
   <div id='number'>
-    
+    <div id='blur'>
   <CountUp end={2627}
    duration={5}
   />
   
   <div className='us'> Active users</div>
+  </div>
   </div>
   </div>
   <div id='mode'>
