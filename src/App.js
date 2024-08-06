@@ -17,9 +17,11 @@ import SPLoader from './SpinnerLoader';
 
 function App() {
   let tg = window.Telegram;
-  
  
- 
+
+
+
+
 
  const data = JSON.stringify({
   eventType: 'web_app_setup_closing_behavior',

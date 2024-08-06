@@ -45,7 +45,7 @@ setTimeout(() => {
        setText(
         'Active users'
        )
-}, 200)
+}, 20)
   }, [])
 
 return (
@@ -92,12 +92,6 @@ return (
       <div id='AirDrop'>
   Air Drop
   </div>
-  <div id="usercard"> 
-   </div>
-   <p>Just text</p> 
-  
-   <p class="hint">Some little hint</p>
-  
   <h2 id="q">
     BPM
   </h2>
