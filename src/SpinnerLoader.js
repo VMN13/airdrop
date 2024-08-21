@@ -18,10 +18,6 @@ app.disableVerticalSwipes()
 
 export default function SPLoader() {
 
-
-
-
-  
   const [theme, setTheme] = useState(() => {
     const mode = JSON.parse(localStorage.getItem('mode'));
     return mode|| "dark"; 
@@ -102,11 +98,13 @@ return (
   <div className='ba'>
   <div id='number'>
     <div id='blur'>
-  <CountUp end={2627}
+  <CountUp end={19} 
    duration={5}
+   separator=""
+   
   />
   
-  <div className='us'> Active users</div>
+  <div className='us'> Active Page</div>
   </div>
   </div>
   </div>
