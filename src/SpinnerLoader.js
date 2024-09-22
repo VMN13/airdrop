@@ -89,7 +89,7 @@ return (
      <div id="reveal-text">
       <div className='air'>
       <div id='AirDrop'>
-  Air Drop
+  Air Drop 
   </div>
   <h2 id="q">
     BPM
